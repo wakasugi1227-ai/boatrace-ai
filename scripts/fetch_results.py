@@ -48,7 +48,7 @@ def fetch_day(day, venue, code):
 def main():
     today = date.today()
     rows = []
-    for offset in range(1, 8):
+    for offset in range(1, 2):
         day = today - timedelta(days=offset)
         for venue, code in VENUES.items():
             try:
